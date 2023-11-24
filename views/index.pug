@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1.title #{title}
+      ul.list-container
+        each item in messages
+          li.list-group
+            p.user #{item.user}
+            p.text #{item.text}
+            p.added #{item.added}
+          

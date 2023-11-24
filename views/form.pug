@@ -1,0 +1,7 @@
+
+block content
+h2.subtitle #{title} 
+    form(id="messageForm" action="/new" method="POST")
+        input(id="userInput" type="text" name="userInput" placeholder="user name")
+        input(id="textInput" type="text" name="textInput" placeholder="message")
+        input(type="submit" value="Send")
